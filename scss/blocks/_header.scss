@@ -1,0 +1,52 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 1280px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+
+  &-list {
+    display: flex;
+    gap: 33px;
+    li {
+      a{
+        color: #83888f;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      a:hover{
+        color: #333D4B;
+      }
+      a:active{
+        color: #333D4B;
+      }
+    }
+  }
+
+  @media (max-width:$tablet) {
+    width: 800px;
+    height: 45px;
+
+    img{
+      width: 157px;
+      height: 17px;
+    }
+
+    &-list{
+      gap: 22px;
+
+      li{
+        a{
+          font-size: 10px;
+        }
+        a:active{
+          color: #333D4B;
+        }
+      }
+    }
+  }
+}

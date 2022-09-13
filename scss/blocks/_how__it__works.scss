@@ -1,0 +1,44 @@
+.how__it__works{
+    margin-top: 300px;
+    &-title{
+        color: #83888F;
+    }
+    &-heading{
+        font-size: 32px;
+        line-height: 36px;
+    }
+    &-list{
+        display: flex;
+        gap: 95px;
+        li{
+            max-width: 260px;
+            margin: 0;
+            color: #333D4B;
+        }
+    }
+    &-text{
+        margin: 42px 0 64px;
+    }
+
+    @media (max-width:$tablet){
+        margin-top: 200px;
+
+        &-heading{
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &-list{
+            gap: 63px;
+            li{
+                max-width: 150px;
+                margin: 0;
+            }
+        }
+
+        &-text{
+            margin: 28px 0 42px;
+            font-size: 10px;
+        }
+    }
+}
